@@ -16,37 +16,30 @@ Template Name: HomepageTemplate
 		<source src="<?php bloginfo('template_directory'); ?>/assets/vid/videobackground.mp4" type="video/mp4">
 		</video>
 		
-	<div class="col-md-offset-6 col-md-6">
+	<div id="top" class="col-md-offset-6 col-md-6">
 		
 		
-		<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-fm-group.png">
-		<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo-federico.png">
-		<h3> By Appointments Only </h3>
+		<img id="logo-comp" src="<?php bloginfo('template_directory'); ?>/assets/img/logo-fm-group.png">
+		<img id="logo-prod" src="<?php bloginfo('template_directory'); ?>/assets/img/logo-federico.png">
+		<h4 id="appointments" class="yellowfy allCaps"> By Appointments Only </h4>
 		<img src="<?php bloginfo('template_directory'); ?>/assets/img/line2.png">
 		
-		<h4> The Most Exclusive FM Perfume Collection in the World </h4>
-		<span> Made in Europe </span>
+		<p  id="sub-exclusive"class="whitify allCaps"> <br>The Most Exclusive FM Perfume Collection in the World </p>
+		<p  id="sub-europe" class="whitify allCaps"> Made in Europe </p>
 		
-		
-		<div class="col-lg-2 bgc-sidebarmenu" style=" margin-top: 50px; width: 187px;height:300px;">
-	<div class="side-nav">
-		<nav class="s-mfix nav nav-stacked" role="navigation">
-	      <?php
-	        if (has_nav_menu('primary_navigation')) :
-	          wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 's-menu list-unstyled'));
-	        endif;
-	      ?>
-	</nav>
-	</div>
-	
-	<nav class="s-mfix nav nav-stacked" role="navigation">
-	      <?php
-	        if (has_nav_menu('side_navigation')) :
-	          wp_nav_menu(array('theme_location' => 'side_navigation', 'menu_class' => 's-border text10 list-unstyled'));
-	        endif;
-	      ?>
-	</nav>
-</div>
+		<!-- //navbar -->
+		<div class="col-lg-12 bgc-sidebarmenu" style=" margin-top: 50px; height:300px;">
+			<div class="side-nav">
+				<nav class="s-mfix nav nav-stacked" role="navigation">
+					<?php
+				        if (has_nav_menu('primary_navigation')) :
+				          wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 's-menu list-unstyled'));
+				        endif;
+				     ?>
+				</nav>
+			</div>
+
+		</div>
 
 	</div>
 
