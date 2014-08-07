@@ -11,9 +11,9 @@ Template Name: HomepageTemplate
 <?php endwhile; ?>
 -->
 <div class="container">
-		<video autoplay loop poster="/assets/vid/polina.jpg" id="bgvid">
-		<!-- <source src="polina.webm" type="video/webm"> -->
-		<source src="<?php bloginfo('template_directory'); ?>/assets/vid/videobackground.mp4" type="video/mp4">
+		<video autoplay loop poster="<?php bloginfo('template_directory'); ?>/assets/vid/videobackground.jpg " id="bgvid" preload="auto">
+		<source src="<?php bloginfo('template_directory'); ?>/assets/vid/videobackground.webmhd.webm" type="video/webm">
+		<source src="<?php bloginfo('template_directory'); ?>/assets/vid/videobackground.mp4.mp4" type="video/mp4">
 		</video>
 		
 	<div id="top" class="col-md-offset-6 col-md-6">
